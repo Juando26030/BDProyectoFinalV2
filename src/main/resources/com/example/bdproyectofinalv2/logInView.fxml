@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="212.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdproyectofinalv2.EventosLogIn">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Button fx:id="btnLogIn" layoutX="115.0" layoutY="147.0" onAction="#mBtnLogIn" text="Log in" />
+   <Label fx:id="lblIngresar" layoutX="112.0" layoutY="17.0" text="INGRESAR" />
+   <Label fx:id="lblUsuario" layoutX="53.0" layoutY="71.0" text="Usuario:" />
+   <Label fx:id="lblContraseña" layoutX="53.0" layoutY="106.0" text="Contraseña:" />
+   <TextField fx:id="txtFieldUsuario" layoutX="129.0" layoutY="67.0" prefHeight="25.0" prefWidth="100.0" />
+   <TextField fx:id="txtFieldContraseña" layoutX="129.0" layoutY="102.0" prefHeight="25.0" prefWidth="100.0" />
+</Pane>

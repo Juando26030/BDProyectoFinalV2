@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="219.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdproyectofinalv2.EventosPagar">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="lblPago" layoutX="129.0" layoutY="13.0" prefHeight="25.0" prefWidth="33.0" text="PAGO" />
+    <Button fx:id="btnGuardar" layoutX="197.0" layoutY="173.0" onAction="#mBtnGuardar" text="Guardar" />
+   <Label fx:id="lblMetodoPago" layoutX="19.0" layoutY="90.0" text="Método de pago:" />
+   <ComboBox fx:id="cmbBoxMetodoPago" layoutX="123.0" layoutY="86.0" prefWidth="150.0" />
+   <Label fx:id="lblNumero" layoutX="19.0" layoutY="134.0" text="Digíte el número:" />
+   <TextField fx:id="txtFieldNumero" layoutX="123.0" layoutY="130.0" />
+   <Label fx:id="lblTotalPagar" layoutX="19.0" layoutY="52.0" text="Total a pagar:" />
+   <Label fx:id="txtTotalPagar" layoutX="123.0" layoutY="52.0" />
+   <Button fx:id="btnVolver" layoutX="39.0" layoutY="173.0" mnemonicParsing="false" onAction="#mBtnVolver" text="Volver" />
+</Pane>

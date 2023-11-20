@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="207.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdproyectofinalv2.EventosExamen">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Button fx:id="btnCrear" layoutX="12.0" layoutY="129.0" onAction="#mBtnCrear" text="Crear exámen" />
+   <Label fx:id="lblRegistro" layoutX="68.0" layoutY="17.0" text="REGISTRO EXÁMEN" />
+   <Label fx:id="lblVeterinario" layoutX="26.0" layoutY="46.0" text="Veterinario:" />
+   <Label fx:id="lblMascota" layoutX="26.0" layoutY="82.0" text="Máscota:" />
+   <ComboBox fx:id="cmbBoxVeterinario" layoutX="97.0" layoutY="42.0" prefHeight="25.0" prefWidth="118.0" />
+   <ComboBox fx:id="cmbBoxMascota" layoutX="97.0" layoutY="78.0" prefHeight="25.0" prefWidth="118.0" />
+   <Button fx:id="btnConsultar" layoutX="110.0" layoutY="129.0" mnemonicParsing="false" onAction="#mBtnConsultar" text="Consultar exámenes" />
+   <Button fx:id="btnLogOut" layoutX="94.0" layoutY="167.0" mnemonicParsing="false" onAction="#mBtnLogOut" text="Log out" />
+</Pane>

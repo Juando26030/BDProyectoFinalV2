@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="274.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdproyectofinalv2.EventosCRUDTratamiento">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="lblActivos" layoutX="14.0" layoutY="42.0" prefHeight="17.0" prefWidth="47.0" text="Activos:" />
+    <Button fx:id="btnActualizar" layoutX="14.0" layoutY="235.0" onAction="#mBtnActualizar" text="Actualizar" />
+   <Label fx:id="lblTratamientos" layoutX="175.0" layoutY="14.0" text="TRATAMIENTOS" />
+   <ListView fx:id="listViewTratamientos" layoutX="14.0" layoutY="61.0" prefHeight="165.0" prefWidth="167.0" />
+   <Label fx:id="lblAgregar" layoutX="196.0" layoutY="59.0" text="Agregar:" />
+   <Label fx:id="lblModificar" layoutX="196.0" layoutY="135.0" text="Modificar:" />
+   <Label fx:id="lblEliminar" layoutX="196.0" layoutY="201.0" text="Eliminar:" />
+   <ComboBox fx:id="cmbBoxAgregar" layoutX="259.0" layoutY="55.0" prefWidth="150.0" />
+   <ComboBox fx:id="cmbBoxModificar" layoutX="259.0" layoutY="131.0" prefWidth="150.0" />
+   <ComboBox fx:id="cmbBoxEliminar" layoutX="259.0" layoutY="197.0" prefWidth="150.0" />
+   <Label fx:id="lblTotalPagar" layoutX="98.0" layoutY="239.0" text="Total a pagar:" />
+   <Label fx:id="txtTotalPagar" layoutX="182.0" layoutY="239.0" />
+   <Button fx:id="btnPagar" layoutX="259.0" layoutY="235.0" mnemonicParsing="false" onAction="#mBtnPagar" text="Pagar" />
+   <Button fx:id="btnVolver" layoutX="360.0" layoutY="235.0" mnemonicParsing="false" onAction="#mBtnVolver" text="Volver" />
+</Pane>

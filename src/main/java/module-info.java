@@ -5,4 +5,6 @@ module com.example.bdproyectofinalv2 {
 
     opens com.example.bdproyectofinalv2 to javafx.fxml;
     exports com.example.bdproyectofinalv2;
+    exports com.example.bdproyectofinalv2.negocio;
+    opens com.example.bdproyectofinalv2.negocio to javafx.fxml;
 }

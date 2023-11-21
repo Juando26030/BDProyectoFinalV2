@@ -1,6 +1,7 @@
 module com.example.bdproyectofinalv2 {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens com.example.bdproyectofinalv2 to javafx.fxml;

@@ -14,4 +14,5 @@
    <Label fx:id="lblContraseña" layoutX="53.0" layoutY="106.0" text="Contraseña:" />
    <TextField fx:id="txtFieldUsuario" layoutX="129.0" layoutY="67.0" prefHeight="25.0" prefWidth="100.0" />
    <TextField fx:id="txtFieldContraseña" layoutX="129.0" layoutY="102.0" prefHeight="25.0" prefWidth="100.0" />
+   <Label fx:id="txtAcceso" layoutX="26.0" layoutY="181.0" prefHeight="17.0" prefWidth="224.0" />
 </Pane>

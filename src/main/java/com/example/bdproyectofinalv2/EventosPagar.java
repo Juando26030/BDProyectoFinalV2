@@ -25,6 +25,7 @@ public class EventosPagar {
     public Label txtTotalPagar;
     public Button btnVolver;
 
+    //METODOS PANTALLAS-----------------------------------------------------------
     public void mBtnGuardar(ActionEvent event) throws IOException
     {
         Parent InicioParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("examenView.fxml")));
@@ -41,4 +42,6 @@ public class EventosPagar {
         window.setScene(InicioScene);
         window.show();
     }
+
+    //METODOS OPERACIONES-----------------------------------------------------------
 }

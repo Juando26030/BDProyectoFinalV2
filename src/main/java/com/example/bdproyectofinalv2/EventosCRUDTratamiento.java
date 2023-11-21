@@ -30,6 +30,7 @@ public class EventosCRUDTratamiento {
     public Button btnPagar;
     public Button btnVolver;
 
+    //METODOS PANTALLAS-----------------------------------------------------------
     public void mBtnVolver(ActionEvent event) throws IOException
     {
         Parent InicioParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("examenView.fxml")));
@@ -46,6 +47,8 @@ public class EventosCRUDTratamiento {
         window.setScene(InicioScene);
         window.show();
     }
+
+    //METODOS OPERACIONES-----------------------------------------------------------
     public void mBtnActualizar()
     {
     }

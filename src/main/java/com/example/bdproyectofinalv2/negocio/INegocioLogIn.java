@@ -1,7 +1,9 @@
 package com.example.bdproyectofinalv2.negocio;
 
-import com.example.bdproyectofinalv2.dominio.Cliente;
+import com.example.bdproyectofinalv2.dominio.Duenho;
+
+import java.math.BigDecimal;
 
 public interface INegocioLogIn {
-    Cliente validarCredenciales (String usuario, String contraseña);
+    BigDecimal validarCredenciales (String usuario, String contraseña);
 }

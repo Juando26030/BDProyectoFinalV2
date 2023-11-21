@@ -48,12 +48,18 @@ public class EventosLogIn {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("examenView.fxml"));
                 Parent examenParent = loader.load();
                 EventosExamen eventosExamenController = loader.getController();
-                eventosExamenController.inicializarComboBoxVeterinarios();
+                // Establecer el duenhoId en EventosExamen
+                eventosExamenController.setDuenhoId(duenhoId);
+                // Inicializar ComboBox en EventosExamen
+                eventosExamenController.inicializarComboBoxMascotas(duenhoId);
 
-                Parent inicioParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("examenView.fxml")));
-                Scene inicioScene = new Scene(inicioParent);
-                Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                window.setScene(inicioScene);
+                // Obtener la escena actual
+                Scene currentScene = ((Node) event.getSource()).getScene();
+
+                // Configurar la nueva escena
+                Scene examenScene = new Scene(examenParent);
+                Stage window = (Stage) currentScene.getWindow();
+                window.setScene(examenScene);
                 window.show();
             } else {
                 txtAcceso.setText("Usuario o contraseña no válidos");

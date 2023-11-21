@@ -5,13 +5,17 @@ import com.example.bdproyectofinalv2.dominio.Mascota;
 import com.example.bdproyectofinalv2.dominio.Tratamiento;
 import javafx.collections.ObservableList;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public interface INegocioOperacion {
     //PARTE EXAMEN---------------------------------------------------
-    Examen crearExamen (Mascota mascotaAct); // Generar constructor
+    BigDecimal crearExamen(BigDecimal veterinarioId, BigDecimal mascotaId, String descripcion);
+
+    BigDecimal obtenerIdVeterinario(String nombreVeterinario);
+    BigDecimal obtenerIdMascota(BigDecimal duenhoId, String nombreMascota);
     ObservableList<String> listarVeterinarios();
-    void listarMascotas();
+    ObservableList<String> listarMascotas(BigDecimal duenhoId);
 
     //PARTE TRATAMIENTO------------------------------------------------
     Boolean agregarTratamiento (Examen examenAct, Tratamiento tratamientoAct, int cant);
